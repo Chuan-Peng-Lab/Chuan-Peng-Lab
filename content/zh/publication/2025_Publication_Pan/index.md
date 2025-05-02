@@ -11,10 +11,10 @@ authors:
 - Alexander Fengler  
 - Michael J. Frank  
 - Ru-Yuan Zhang  
-- Hu Chuan-Peng
+- Hu Chuan Peng
 date: "2025-02-13T00:00:00Z"
 doi: "10.1177/25152459241298700"
-featured: false
+featured: true
 image:
   caption: ''
   focal_point: ""
@@ -44,5 +44,5 @@ Click the _Cite_ button above to demo the feature to enable visitors to import p
 {{% /callout %}}
 
 {{% callout note %}}
-Click the _Journal article_ button below abstract to check all other journal articles in the website.
+Click the _Preprint_ button below abstract to check all other Preprint in the website.
 {{% /callout %}}

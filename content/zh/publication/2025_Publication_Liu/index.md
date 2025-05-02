@@ -12,7 +12,7 @@ authors:
 - Hu Chuan Peng
 date: "2025-01-02T00:00:00Z"
 doi: "10.3758/s13428-024-02538-6"
-featured: false
+featured: true
 image:
   caption: ''
   focal_point: ""
