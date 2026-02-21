@@ -1,99 +1,270 @@
+# Chuan-Peng Lab Website
 
-## Baisc Usage
-
-Clone this repo, and run below code in R: 
-- `blogdown:::serve_site()` run serve at local host
-- `blogdown:::new_post_addin()` add new posts. 
-- `blogdown::build_site()` build the site. 
-- After that, you can commit the change and push it to github.
+> Website: https://chuan-peng-lab.netlify.app/
 
 ---
 
-## Files and folders for custom settings (个体化/修改网站内容可以改动的地方)
-```
-config\_default: 
-	config.yaml
-		title: Chuan-Peng Lab # Website name
-		baseURL: 'https://chuan-peng-lab.netlify.app/' # Website URL 
-	menus.yaml / menus_zh.yaml
-		name, url, weight
-	params.yaml
-		appearance:
-			theme_day: minimal
-			theme_night: minimal
+## Quick Start
 
-content\en(zh)
-	authors: Home
-	home: chunks in the home page
-		demo: greenn -> blue
-		skills: research fields
-		projects: team
-		publications: featured
-		collaborators: accomplishments
-		posts: blog posts
-		contact: contact
-		demo_join_us: join us
-	post: blog posts
-	project: informations of team members
-	publication: 
-		index.md: title, abstract, publication date... [fill in all the information here]
-		cite.bib: copy from Google Scholar
-		featured.jpg: pic in paper
+1. Clone this repo
+2. Run `blogdown::serve_site()` in R console to preview locally
+3. Edit files in `content/en/` (English) or `content/zh/` (Chinese)
+4. Run `blogdown::build_site()` to build
+5. Commit and push to GitHub
 
+---
 
-static
-	To insert an image, please place the image here.
+## Environment Setup
 
-no need editing other folders
+### Prerequisites
+- R and RStudio installed
+- Git installed
+
+### Install blogdown
+```r
+install.packages("blogdown")
+blogdown::install_hugo()
 ```
 
-英文版在`content\en\` \
-中文版在`content\zh\` \
-修改某个地方后, 在R的console里输入blogdown::serve_site()检查是否可以正常运行。 \
-如果可以正常渲染网站, 那么再输入blogdown::build_site(), 最后上传至GitHub。 \
-如果发现可以正常运行, 但是修改内容没有实装。 \
-  1. 那么可以运行blogdown::stop_site()后, 再输入blogdown::serve_site() 
-  2. 或关闭R studio重新打开. 
+### Local Preview
+```r
+blogdown::serve_site()   # Start local server
+blogdown::stop_site()    # Stop server
+blogdown::build_site()   # Build site
+```
 
-## To modify the introduction of the website
-"content\en\authors\admin\" \
-该文件夹下的`_index.md`就是`introduction`
-	"---" 分割线上面部分, 在对应地方填写对应内容
-	"---" 分割线下方部分, 符合html语法的都可以正常显示
+If changes don't appear:
+1. Run `blogdown::stop_site()`, then `blogdown::serve_site()`
+2. Or restart RStudio
 
-## To update team members's info
-Path: `content\en\project\` \
-该文件夹下每个子文件夹代表一个成员的信息，文件夹名是姓名缩写。
+---
 
-### 修改
-打开一个人的个人信息, 修改`index.md` \
-featured.jpg是该人员头像
+## Files and Folders Overview
 
-### 创建
-复制任意一个人的文件夹并修改为目标人员的名字 \
-在复制的文件夹内修改`index.md`和`featured.jpg`
+```
+config/_default/
+  config.yaml      # Site title, baseURL
+  menus.yaml       # Navigation menu (EN)
+  menus_zh.yaml    # Navigation menu (ZH)
+  params.yaml      # Theme settings
 
-## To update publications
-Path for 英文: `content\en\publication\` \
-Path for 中文: `content\zh\publication\` 
+content/en/        # English content
+content/zh/        # Chinese content
+  authors/admin/   # PI introduction
+  home/            # Homepage sections
+  post/            # Blog posts
+  project/         # Team members
+  publication/     # Publications
 
- 1. 复制任意一个已存在的文件夹。
- 2. 修改`cite.bib`, 该内容可以在Google scholar上复制得到或者在Zotero上生成后复制。
- 3. 修改`featured.jpg`, 可以使用该文章内的任意一张图片。
- 4. 修改`index.md` (没有提到的可以不改)。
-	- abstract: 这部分直接复制文章的摘要. **但是注意不能有冒号**。
-	- author_notes: 代表作者右上角的上标. 可以不写。
-	- authors: 作者的名字。
-	- date: 按照现有格式修改时间。
-	- doi: 正常填写doi。
-	- featured: 该图片是否显示在主页，`true`，在主页显示；`false`，点开才能看到。
-	- publication: 期刊。
-	- publication_short: 期刊的缩写名字. 也可以填全名。
-	- publication_types: 不同的数字代表发表方式, 1=会议文章, 2 = 期刊, 3 = preprint。
-	- summary: 显示在主页上的缩略介绍. 一般选择摘要的第一句话。
-	- title: 标题
+static/            # Static files (images, etc.)
+```
 
-	"---" 分割线下方部分, “Click the _Preprint_ button below abstract to check all other Preprints in the website.” \
-	注意，这句话要上上面的`publication_types`保持一致。
+---
+
+## Update Member Information
+
+### File Paths
+- English: `content/en/project/{initials}/index.md`
+- Chinese: `content/zh/project/{initials}/index.md`
+- Avatar: `content/en/project/{initials}/featured.jpg`
+
+> `{initials}` = name abbreviation, e.g., `csy`, `hcp`
+
+### Role Tags
+| Tag | Description |
+|-----|-------------|
+| `Principal Investigator` | PI / Lab head |
+| `Research Assistants` | Research Assistant |
+| `Postgraduate` | Graduate student |
+| `Undergraduate` | Undergraduate |
+| `Alumni` | Former member |
+
+### Add New Member
+
+1. **Create folder**
+   - Copy an existing member folder
+   - Rename to member's initials (e.g., `csy2` if initials conflict)
+
+2. **Edit `index.md`**
+   ```yaml
+   ---
+   date: "2024-09-01T00:00:00Z"
+   image:
+     caption: Your Name
+     focal_point: Smart
+   links:
+   - icon: github
+     icon_pack: fab
+     name: Follow
+     url: https://github.com/yourusername
+   summary: __Sep. 2024 ~ Now__ <br/> Brief introduction
+   tags:
+   - Undergraduate        # Choose from role tags above
+   title: Your Name
+   ---
+   Your bio here. Markdown and HTML supported.
+   ```
+
+3. **Add avatar**
+   - Replace `featured.jpg` (recommended size: < 500KB)
+
+4. **Repeat for both EN and ZH versions**
+
+### Edit Existing Member
+- Open `index.md` in the member's folder
+- Update fields as needed
+- Run `blogdown::serve_site()` to preview
+
+### Member Departure
+- Change tag to `Alumni`
+- Update `summary` with date range (e.g., `__Sep. 2022 ~ Jun. 2024__`)
+
+---
+
+## Update Publications
+
+### File Paths
+- English: `content/en/publication/{year_Publication_Name}/`
+- Chinese: `content/zh/publication/{year_Publication_Name}/`
+
+Each publication folder contains:
+- `index.md` - Publication metadata
+- `cite.bib` - BibTeX citation
+- `featured.jpg` - Preview image (optional)
+
+### Add New Publication
+
+1. **Create folder**
+   - Copy an existing publication folder
+   - Rename to `{Year}_Publication_{FirstAuthor}` (e.g., `2024_Publication_Andres`)
+
+2. **Edit `cite.bib`**
+   - Copy BibTeX from Google Scholar or Zotero
+
+3. **Edit `index.md`**
+
+   Key fields:
+   ```yaml
+   ---
+   abstract: Paper abstract (no colons!)
+   authors:
+   - First Author
+   - Second Author
+   date: "2024-03-27T00:00:00Z"
+   doi: "10.xxxx/xxxxx"
+   featured: false        # Show on homepage
+   projects:
+   - Publication_Andres_2024   # Link to project, optional
+   publication: In *Journal Name*
+   publication_short: In *J. Name*
+   publication_types:
+   - "2"                  # 1=Conference, 2=Journal, 3=Preprint
+   summary: Brief summary for homepage
+   title: Paper Title
+   url_pdf: "https://..."  # PDF link, optional
+   ---
+   ```
+
+4. **Add preview image** (optional)
+   - Replace `featured.jpg` with figure from paper
+
+5. **Repeat for ZH version**
+
+### The `projects` Field
+
+The `projects` field links publications to related projects or members.
+
+- **Purpose**: Associate a publication with a specific project page
+- **Format**: List of project identifiers
+- **Example**:
+  ```yaml
+  projects:
+  - Publication_Andres_2024
+  ```
+- **Note**: This is optional. Leave empty (`projects: ""`) if not needed.
+
+### Publication Types
+| Value | Type |
+|-------|------|
+| `"1"` | Conference paper |
+| `"2"` | Journal article |
+| `"3"` | Preprint |
+
+---
+
+## Common Issues
+
+### Site doesn't update after editing
+1. Stop server: `blogdown::stop_site()`
+2. Restart: `blogdown::serve_site()`
+3. If still not working, restart RStudio
+
+### Image not showing
+- Check file path is correct
+- For new images, place in `static/` folder
+- Reference as `/img/filename.jpg` in markdown
+
+### YAML parsing error
+- Check for colons in `abstract` field
+- Ensure proper indentation
+- Use quotes around values with special characters
+
+### Folder name conflict
+If two members have same initials:
+- Add numeric suffix: `csy`, `csy2`
+
+---
+
+## Checklists
+
+### New Member
+- [ ] Create folder in `content/en/project/{initials}/`
+- [ ] Create folder in `content/zh/project/{initials}/`
+- [ ] Edit `index.md` (EN and ZH)
+- [ ] Add `featured.jpg` avatar
+- [ ] Set correct role tag
+- [ ] Preview with `blogdown::serve_site()`
+- [ ] Build with `blogdown::build_site()`
+- [ ] Commit and push to GitHub
+
+### New Publication
+- [ ] Create folder in `content/en/publication/{year_Publication_Name}/`
+- [ ] Create folder in `content/zh/publication/{year_Publication_Name}/`
+- [ ] Edit `cite.bib`
+- [ ] Edit `index.md` (EN and ZH)
+- [ ] Add `featured.jpg` (optional)
+- [ ] Set correct `publication_types`
+- [ ] Preview with `blogdown::serve_site()`
+- [ ] Build with `blogdown::build_site()`
+- [ ] Commit and push to GitHub
+
+### Member Departure
+- [ ] Update tag to `Alumni` (EN and ZH)
+- [ ] Update `summary` with date range
+- [ ] Update any ongoing projects info
+- [ ] Preview and verify
+- [ ] Commit and push to GitHub
+
+---
+
+## Modify Website Introduction
+
+PI introduction is located at:
+- `content/en/authors/admin/_index.md`
+- `content/zh/authors/admin/_index.md`
+
+Edit the file directly. Content below `---` supports HTML.
+
+---
+
+## Additional Resources
+
+- [Wowchemy Documentation](https://wowchemy.com/docs/)
+- [blogdown Book](https://bookdown.org/yihui/blogdown/)
+- [Hugo Documentation](https://gohugo.io/documentation/)
+
+---
+
+*Last updated: February 2026*
 	
 	
