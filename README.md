@@ -1,270 +1,270 @@
-# Chuan-Peng Lab Website
+# 传鹏实验室网站
 
-> Website: https://chuan-peng-lab.netlify.app/
-
----
-
-## Quick Start
-
-1. Clone this repo
-2. Run `blogdown::serve_site()` in R console to preview locally
-3. Edit files in `content/en/` (English) or `content/zh/` (Chinese)
-4. Run `blogdown::build_site()` to build
-5. Commit and push to GitHub
+> 网站地址：https://chuan-peng-lab.netlify.app/
 
 ---
 
-## Environment Setup
+## 快速入门
 
-### Prerequisites
-- R and RStudio installed
-- Git installed
+1. 克隆本仓库
+2. 在 R 控制台运行 `blogdown::serve_site()` 本地预览
+3. 编辑 `content/en/`（英文）或 `content/zh/`（中文）中的文件
+4. 运行 `blogdown::build_site()` 构建网站
+5. 提交并推送到 GitHub
 
-### Install blogdown
+---
+
+## 环境配置
+
+### 前置条件
+- 已安装 R 和 RStudio
+- 已安装 Git
+
+### 安装 blogdown
 ```r
 install.packages("blogdown")
 blogdown::install_hugo()
 ```
 
-### Local Preview
+### 本地预览
 ```r
-blogdown::serve_site()   # Start local server
-blogdown::stop_site()    # Stop server
-blogdown::build_site()   # Build site
+blogdown::serve_site()   # 启动本地服务器
+blogdown::stop_site()    # 停止服务器
+blogdown::build_site()   # 构建网站
 ```
 
-If changes don't appear:
-1. Run `blogdown::stop_site()`, then `blogdown::serve_site()`
-2. Or restart RStudio
+如果修改未生效：
+1. 运行 `blogdown::stop_site()`，再运行 `blogdown::serve_site()`
+2. 或重启 RStudio
 
 ---
 
-## Files and Folders Overview
+## 文件结构概览
 
 ```
 config/_default/
-  config.yaml      # Site title, baseURL
-  menus.yaml       # Navigation menu (EN)
-  menus_zh.yaml    # Navigation menu (ZH)
-  params.yaml      # Theme settings
+  config.yaml      # 网站标题、地址
+  menus.yaml       # 导航菜单（英文）
+  menus_zh.yaml    # 导航菜单（中文）
+  params.yaml      # 主题设置
 
-content/en/        # English content
-content/zh/        # Chinese content
-  authors/admin/   # PI introduction
-  home/            # Homepage sections
-  post/            # Blog posts
-  project/         # Team members
-  publication/     # Publications
+content/en/        # 英文内容
+content/zh/        # 中文内容
+  authors/admin/   # PI 介绍
+  home/            # 首页模块
+  post/            # 博客文章
+  project/         # 团队成员
+  publication/     # 发表论文
 
-static/            # Static files (images, etc.)
+static/            # 静态文件（图片等）
 ```
 
 ---
 
-## Update Member Information
+## 更新成员信息
 
-### File Paths
-- English: `content/en/project/{initials}/index.md`
-- Chinese: `content/zh/project/{initials}/index.md`
-- Avatar: `content/en/project/{initials}/featured.jpg`
+### 文件路径
+- 英文：`content/en/project/{姓名缩写}/index.md`
+- 中文：`content/zh/project/{姓名缩写}/index.md`
+- 头像：`content/en/project/{姓名缩写}/featured.jpg`
 
-> `{initials}` = name abbreviation, e.g., `csy`, `hcp`
+> `{姓名缩写}` 即姓名首字母，如 `csy`、`hcp`
 
-### Role Tags
-| Tag | Description |
-|-----|-------------|
-| `Principal Investigator` | PI / Lab head |
-| `Research Assistants` | Research Assistant |
-| `Postgraduate` | Graduate student |
-| `Undergraduate` | Undergraduate |
-| `Alumni` | Former member |
+### 角色标签
+| 标签 | 说明 |
+|-----|------|
+| `Principal Investigator` | 实验室负责人 |
+| `Research Assistants` | 研究助理 |
+| `Postgraduate` | 研究生 |
+| `Undergraduate` | 本科生 |
+| `Alumni` | 已毕业成员 |
 
-### Add New Member
+### 添加新成员
 
-1. **Create folder**
-   - Copy an existing member folder
-   - Rename to member's initials (e.g., `csy2` if initials conflict)
+1. **创建文件夹**
+   - 复制一个现有成员的文件夹
+   - 重命名为新成员的姓名缩写（如重名可加数字后缀，如 `csy2`）
 
-2. **Edit `index.md`**
+2. **编辑 `index.md`**
    ```yaml
    ---
    date: "2024-09-01T00:00:00Z"
    image:
-     caption: Your Name
+     caption: 你的名字
      focal_point: Smart
    links:
    - icon: github
      icon_pack: fab
      name: Follow
-     url: https://github.com/yourusername
-   summary: __Sep. 2024 ~ Now__ <br/> Brief introduction
+     url: https://github.com/你的用户名
+   summary: __2024年9月 ~ 至今__ <br/> 简短介绍
    tags:
-   - Undergraduate        # Choose from role tags above
-   title: Your Name
+   - Undergraduate        # 从上方角色标签中选择
+   title: 你的名字
    ---
-   Your bio here. Markdown and HTML supported.
+   在这里写个人简介，支持 Markdown 和 HTML。
    ```
 
-3. **Add avatar**
-   - Replace `featured.jpg` (recommended size: < 500KB)
+3. **添加头像**
+   - 替换 `featured.jpg`（建议大小 < 500KB）
 
-4. **Repeat for both EN and ZH versions**
+4. **英文和中文版本都要添加**
 
-### Edit Existing Member
-- Open `index.md` in the member's folder
-- Update fields as needed
-- Run `blogdown::serve_site()` to preview
+### 编辑现有成员
+- 打开成员文件夹中的 `index.md`
+- 根据需要更新字段
+- 运行 `blogdown::serve_site()` 预览
 
-### Member Departure
-- Change tag to `Alumni`
-- Update `summary` with date range (e.g., `__Sep. 2022 ~ Jun. 2024__`)
+### 成员离组
+- 将标签改为 `Alumni`
+- 更新 `summary` 中的时间范围（如 `__2022年9月 ~ 2024年6月__`）
 
 ---
 
-## Update Publications
+## 更新论文信息
 
-### File Paths
-- English: `content/en/publication/{year_Publication_Name}/`
-- Chinese: `content/zh/publication/{year_Publication_Name}/`
+### 文件路径
+- 英文：`content/en/publication/{年份_Publication_第一作者}/`
+- 中文：`content/zh/publication/{年份_Publication_第一作者}/`
 
-Each publication folder contains:
-- `index.md` - Publication metadata
-- `cite.bib` - BibTeX citation
-- `featured.jpg` - Preview image (optional)
+每个论文文件夹包含：
+- `index.md` - 论文元数据
+- `cite.bib` - BibTeX 引用
+- `featured.jpg` - 预览图片（可选）
 
-### Add New Publication
+### 添加新论文
 
-1. **Create folder**
-   - Copy an existing publication folder
-   - Rename to `{Year}_Publication_{FirstAuthor}` (e.g., `2024_Publication_Andres`)
+1. **创建文件夹**
+   - 复制一个现有论文文件夹
+   - 重命名为 `{年份}_Publication_{第一作者}`（如 `2024_Publication_Andres`）
 
-2. **Edit `cite.bib`**
-   - Copy BibTeX from Google Scholar or Zotero
+2. **编辑 `cite.bib`**
+   - 从 Google Scholar 或 Zotero 复制 BibTeX
 
-3. **Edit `index.md`**
+3. **编辑 `index.md`**
 
-   Key fields:
+   关键字段：
    ```yaml
    ---
-   abstract: Paper abstract (no colons!)
+   abstract: 论文摘要（注意不能有冒号！）
    authors:
-   - First Author
-   - Second Author
+   - 第一作者
+   - 第二作者
    date: "2024-03-27T00:00:00Z"
    doi: "10.xxxx/xxxxx"
-   featured: false        # Show on homepage
+   featured: false        # 是否在主页显示
    projects:
-   - Publication_Andres_2024   # Link to project, optional
+   - Publication_Andres_2024   # 关联项目，可选
    publication: In *Journal Name*
    publication_short: In *J. Name*
    publication_types:
-   - "2"                  # 1=Conference, 2=Journal, 3=Preprint
-   summary: Brief summary for homepage
-   title: Paper Title
-   url_pdf: "https://..."  # PDF link, optional
+   - "2"                  # 1=会议论文, 2=期刊论文, 3=预印本
+   summary: 主页显示的简介
+   title: 论文标题
+   url_pdf: "https://..."  # PDF 链接，可选
    ---
    ```
 
-4. **Add preview image** (optional)
-   - Replace `featured.jpg` with figure from paper
+4. **添加预览图片**（可选）
+   - 用论文中的图片替换 `featured.jpg`
 
-5. **Repeat for ZH version**
+5. **中文版同样操作**
 
-### The `projects` Field
+### `projects` 字段
 
-The `projects` field links publications to related projects or members.
+`projects` 字段用于将论文与相关项目或成员关联。
 
-- **Purpose**: Associate a publication with a specific project page
-- **Format**: List of project identifiers
-- **Example**:
+- **用途**：将论文与特定项目页面关联
+- **格式**：项目标识符列表
+- **示例**：
   ```yaml
   projects:
   - Publication_Andres_2024
   ```
-- **Note**: This is optional. Leave empty (`projects: ""`) if not needed.
+- **注意**：这是可选的。如不需要可留空（`projects: ""`）
 
-### Publication Types
-| Value | Type |
+### 论文类型
+| 值 | 类型 |
 |-------|------|
-| `"1"` | Conference paper |
-| `"2"` | Journal article |
-| `"3"` | Preprint |
+| `"1"` | 会议论文 |
+| `"2"` | 期刊论文 |
+| `"3"` | 预印本 |
 
 ---
 
-## Common Issues
+## 常见问题
 
-### Site doesn't update after editing
-1. Stop server: `blogdown::stop_site()`
-2. Restart: `blogdown::serve_site()`
-3. If still not working, restart RStudio
+### 修改后网站未更新
+1. 停止服务器：`blogdown::stop_site()`
+2. 重新启动：`blogdown::serve_site()`
+3. 如仍无效，重启 RStudio
 
-### Image not showing
-- Check file path is correct
-- For new images, place in `static/` folder
-- Reference as `/img/filename.jpg` in markdown
+### 图片不显示
+- 检查文件路径是否正确
+- 新图片放在 `static/` 文件夹
+- 在 markdown 中引用为 `/img/filename.jpg`
 
-### YAML parsing error
-- Check for colons in `abstract` field
-- Ensure proper indentation
-- Use quotes around values with special characters
+### YAML 解析错误
+- 检查 `abstract` 字段是否有冒号
+- 确保缩进正确
+- 含特殊字符的值用引号包裹
 
-### Folder name conflict
-If two members have same initials:
-- Add numeric suffix: `csy`, `csy2`
-
----
-
-## Checklists
-
-### New Member
-- [ ] Create folder in `content/en/project/{initials}/`
-- [ ] Create folder in `content/zh/project/{initials}/`
-- [ ] Edit `index.md` (EN and ZH)
-- [ ] Add `featured.jpg` avatar
-- [ ] Set correct role tag
-- [ ] Preview with `blogdown::serve_site()`
-- [ ] Build with `blogdown::build_site()`
-- [ ] Commit and push to GitHub
-
-### New Publication
-- [ ] Create folder in `content/en/publication/{year_Publication_Name}/`
-- [ ] Create folder in `content/zh/publication/{year_Publication_Name}/`
-- [ ] Edit `cite.bib`
-- [ ] Edit `index.md` (EN and ZH)
-- [ ] Add `featured.jpg` (optional)
-- [ ] Set correct `publication_types`
-- [ ] Preview with `blogdown::serve_site()`
-- [ ] Build with `blogdown::build_site()`
-- [ ] Commit and push to GitHub
-
-### Member Departure
-- [ ] Update tag to `Alumni` (EN and ZH)
-- [ ] Update `summary` with date range
-- [ ] Update any ongoing projects info
-- [ ] Preview and verify
-- [ ] Commit and push to GitHub
+### 文件夹名冲突
+如果两人姓名缩写相同：
+- 添加数字后缀：`csy`、`csy2`
 
 ---
 
-## Modify Website Introduction
+## 检查清单
 
-PI introduction is located at:
+### 新成员加入
+- [ ] 在 `content/en/project/{姓名缩写}/` 创建文件夹
+- [ ] 在 `content/zh/project/{姓名缩写}/` 创建文件夹
+- [ ] 编辑 `index.md`（英文和中文）
+- [ ] 添加 `featured.jpg` 头像
+- [ ] 设置正确的角色标签
+- [ ] 用 `blogdown::serve_site()` 预览
+- [ ] 用 `blogdown::build_site()` 构建
+- [ ] 提交并推送到 GitHub
+
+### 新论文发表
+- [ ] 在 `content/en/publication/{年份_Publication_第一作者}/` 创建文件夹
+- [ ] 在 `content/zh/publication/{年份_Publication_第一作者}/` 创建文件夹
+- [ ] 编辑 `cite.bib`
+- [ ] 编辑 `index.md`（英文和中文）
+- [ ] 添加 `featured.jpg`（可选）
+- [ ] 设置正确的 `publication_types`
+- [ ] 用 `blogdown::serve_site()` 预览
+- [ ] 用 `blogdown::build_site()` 构建
+- [ ] 提交并推送到 GitHub
+
+### 成员离组
+- [ ] 将标签改为 `Alumni`（英文和中文）
+- [ ] 更新 `summary` 中的时间范围
+- [ ] 更新进行中项目的信息
+- [ ] 预览并确认
+- [ ] 提交并推送到 GitHub
+
+---
+
+## 修改网站简介
+
+PI 介绍位于：
 - `content/en/authors/admin/_index.md`
 - `content/zh/authors/admin/_index.md`
 
-Edit the file directly. Content below `---` supports HTML.
+直接编辑文件即可。`---` 分隔线下方支持 HTML。
 
 ---
 
-## Additional Resources
+## 其他资源
 
-- [Wowchemy Documentation](https://wowchemy.com/docs/)
-- [blogdown Book](https://bookdown.org/yihui/blogdown/)
-- [Hugo Documentation](https://gohugo.io/documentation/)
+- [Wowchemy 文档](https://wowchemy.com/docs/)
+- [blogdown 书籍](https://bookdown.org/yihui/blogdown/)
+- [Hugo 文档](https://gohugo.io/documentation/)
 
 ---
 
-*Last updated: February 2026*
+*最后更新：2026年2月*
 	
 	
