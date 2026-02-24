@@ -1,99 +1,270 @@
+# 传鹏实验室网站
 
-## Baisc Usage
-
-Clone this repo, and run below code in R: 
-- `blogdown:::serve_site()` run serve at local host
-- `blogdown:::new_post_addin()` add new posts. 
-- `blogdown::build_site()` build the site. 
-- After that, you can commit the change and push it to github.
+> 网站地址：https://chuan-peng-lab.netlify.app/
 
 ---
 
-## Files and folders for custom settings (个体化/修改网站内容可以改动的地方)
-```
-config\_default: 
-	config.yaml
-		title: Chuan-Peng Lab # Website name
-		baseURL: 'https://chuan-peng-lab.netlify.app/' # Website URL 
-	menus.yaml / menus_zh.yaml
-		name, url, weight
-	params.yaml
-		appearance:
-			theme_day: minimal
-			theme_night: minimal
+## 快速入门
 
-content\en(zh)
-	authors: Home
-	home: chunks in the home page
-		demo: greenn -> blue
-		skills: research fields
-		projects: team
-		publications: featured
-		collaborators: accomplishments
-		posts: blog posts
-		contact: contact
-		demo_join_us: join us
-	post: blog posts
-	project: informations of team members
-	publication: 
-		index.md: title, abstract, publication date... [fill in all the information here]
-		cite.bib: copy from Google Scholar
-		featured.jpg: pic in paper
+1. 克隆本仓库
+2. 在 R 控制台运行 `blogdown::serve_site()` 本地预览
+3. 编辑 `content/en/`（英文）或 `content/zh/`（中文）中的文件
+4. 运行 `blogdown::build_site()` 构建网站
+5. 提交并推送到 GitHub
 
+---
 
-static
-	To insert an image, please place the image here.
+## 环境配置
 
-no need editing other folders
+### 前置条件
+- 已安装 R 和 RStudio
+- 已安装 Git
+
+### 安装 blogdown
+```r
+install.packages("blogdown")
+blogdown::install_hugo()
 ```
 
-英文版在`content\en\` \
-中文版在`content\zh\` \
-修改某个地方后, 在R的console里输入blogdown::serve_site()检查是否可以正常运行。 \
-如果可以正常渲染网站, 那么再输入blogdown::build_site(), 最后上传至GitHub。 \
-如果发现可以正常运行, 但是修改内容没有实装。 \
-  1. 那么可以运行blogdown::stop_site()后, 再输入blogdown::serve_site() 
-  2. 或关闭R studio重新打开. 
+### 本地预览
+```r
+blogdown::serve_site()   # 启动本地服务器
+blogdown::stop_site()    # 停止服务器
+blogdown::build_site()   # 构建网站
+```
 
-## To modify the introduction of the website
-"content\en\authors\admin\" \
-该文件夹下的`_index.md`就是`introduction`
-	"---" 分割线上面部分, 在对应地方填写对应内容
-	"---" 分割线下方部分, 符合html语法的都可以正常显示
+如果修改未生效：
+1. 运行 `blogdown::stop_site()`，再运行 `blogdown::serve_site()`
+2. 或重启 RStudio
 
-## To update team members's info
-Path: `content\en\project\` \
-该文件夹下每个子文件夹代表一个成员的信息，文件夹名是姓名缩写。
+---
 
-### 修改
-打开一个人的个人信息, 修改`index.md` \
-featured.jpg是该人员头像
+## 文件结构概览
 
-### 创建
-复制任意一个人的文件夹并修改为目标人员的名字 \
-在复制的文件夹内修改`index.md`和`featured.jpg`
+```
+config/_default/
+  config.yaml      # 网站标题、地址
+  menus.yaml       # 导航菜单（英文）
+  menus_zh.yaml    # 导航菜单（中文）
+  params.yaml      # 主题设置
 
-## To update publications
-Path for 英文: `content\en\publication\` \
-Path for 中文: `content\zh\publication\` 
+content/en/        # 英文内容
+content/zh/        # 中文内容
+  authors/admin/   # PI 介绍
+  home/            # 首页模块
+  post/            # 博客文章
+  project/         # 团队成员
+  publication/     # 发表论文
 
- 1. 复制任意一个已存在的文件夹。
- 2. 修改`cite.bib`, 该内容可以在Google scholar上复制得到或者在Zotero上生成后复制。
- 3. 修改`featured.jpg`, 可以使用该文章内的任意一张图片。
- 4. 修改`index.md` (没有提到的可以不改)。
-	- abstract: 这部分直接复制文章的摘要. **但是注意不能有冒号**。
-	- author_notes: 代表作者右上角的上标. 可以不写。
-	- authors: 作者的名字。
-	- date: 按照现有格式修改时间。
-	- doi: 正常填写doi。
-	- featured: 该图片是否显示在主页，`true`，在主页显示；`false`，点开才能看到。
-	- publication: 期刊。
-	- publication_short: 期刊的缩写名字. 也可以填全名。
-	- publication_types: 不同的数字代表发表方式, 1=会议文章, 2 = 期刊, 3 = preprint。
-	- summary: 显示在主页上的缩略介绍. 一般选择摘要的第一句话。
-	- title: 标题
+static/            # 静态文件（图片等）
+```
 
-	"---" 分割线下方部分, “Click the _Preprint_ button below abstract to check all other Preprints in the website.” \
-	注意，这句话要上上面的`publication_types`保持一致。
+---
+
+## 更新成员信息
+
+### 文件路径
+- 英文：`content/en/project/{姓名缩写}/index.md`
+- 中文：`content/zh/project/{姓名缩写}/index.md`
+- 头像：`content/en/project/{姓名缩写}/featured.jpg`
+
+> `{姓名缩写}` 即姓名首字母，如 `csy`、`hcp`
+
+### 角色标签
+| 标签 | 说明 |
+|-----|------|
+| `Principal Investigator` | 实验室负责人 |
+| `Research Assistants` | 研究助理 |
+| `Postgraduate` | 研究生 |
+| `Undergraduate` | 本科生 |
+| `Alumni` | 已毕业成员 |
+
+### 添加新成员
+
+1. **创建文件夹**
+   - 复制一个现有成员的文件夹
+   - 重命名为新成员的姓名缩写（如重名可加数字后缀，如 `csy2`）
+
+2. **编辑 `index.md`**
+   ```yaml
+   ---
+   date: "2024-09-01T00:00:00Z"
+   image:
+     caption: 你的名字
+     focal_point: Smart
+   links:
+   - icon: github
+     icon_pack: fab
+     name: Follow
+     url: https://github.com/你的用户名
+   summary: __2024年9月 ~ 至今__ <br/> 简短介绍
+   tags:
+   - Undergraduate        # 从上方角色标签中选择
+   title: 你的名字
+   ---
+   在这里写个人简介，支持 Markdown 和 HTML。
+   ```
+
+3. **添加头像**
+   - 替换 `featured.jpg`（建议大小 < 500KB）
+
+4. **英文和中文版本都要添加**
+
+### 编辑现有成员
+- 打开成员文件夹中的 `index.md`
+- 根据需要更新字段
+- 运行 `blogdown::serve_site()` 预览
+
+### 成员离组
+- 将标签改为 `Alumni`
+- 更新 `summary` 中的时间范围（如 `__2022年9月 ~ 2024年6月__`）
+
+---
+
+## 更新论文信息
+
+### 文件路径
+- 英文：`content/en/publication/{年份_Publication_第一作者}/`
+- 中文：`content/zh/publication/{年份_Publication_第一作者}/`
+
+每个论文文件夹包含：
+- `index.md` - 论文元数据
+- `cite.bib` - BibTeX 引用
+- `featured.jpg` - 预览图片（可选）
+
+### 添加新论文
+
+1. **创建文件夹**
+   - 复制一个现有论文文件夹
+   - 重命名为 `{年份}_Publication_{第一作者}`（如 `2024_Publication_Andres`）
+
+2. **编辑 `cite.bib`**
+   - 从 Google Scholar 或 Zotero 复制 BibTeX
+
+3. **编辑 `index.md`**
+
+   关键字段：
+   ```yaml
+   ---
+   abstract: 论文摘要（注意不能有冒号！）
+   authors:
+   - 第一作者
+   - 第二作者
+   date: "2024-03-27T00:00:00Z"
+   doi: "10.xxxx/xxxxx"
+   featured: false        # 是否在主页显示
+   projects:
+   - Publication_Andres_2024   # 关联项目，可选
+   publication: In *Journal Name*
+   publication_short: In *J. Name*
+   publication_types:
+   - "2"                  # 1=会议论文, 2=期刊论文, 3=预印本
+   summary: 主页显示的简介
+   title: 论文标题
+   url_pdf: "https://..."  # PDF 链接，可选
+   ---
+   ```
+
+4. **添加预览图片**（可选）
+   - 用论文中的图片替换 `featured.jpg`
+
+5. **中文版同样操作**
+
+### `projects` 字段
+
+`projects` 字段用于将论文与相关项目或成员关联。
+
+- **用途**：将论文与特定项目页面关联
+- **格式**：项目标识符列表
+- **示例**：
+  ```yaml
+  projects:
+  - Publication_Andres_2024
+  ```
+- **注意**：这是可选的。如不需要可留空（`projects: ""`）
+
+### 论文类型
+| 值 | 类型 |
+|-------|------|
+| `"1"` | 会议论文 |
+| `"2"` | 期刊论文 |
+| `"3"` | 预印本 |
+
+---
+
+## 常见问题
+
+### 修改后网站未更新
+1. 停止服务器：`blogdown::stop_site()`
+2. 重新启动：`blogdown::serve_site()`
+3. 如仍无效，重启 RStudio
+
+### 图片不显示
+- 检查文件路径是否正确
+- 新图片放在 `static/` 文件夹
+- 在 markdown 中引用为 `/img/filename.jpg`
+
+### YAML 解析错误
+- 检查 `abstract` 字段是否有冒号
+- 确保缩进正确
+- 含特殊字符的值用引号包裹
+
+### 文件夹名冲突
+如果两人姓名缩写相同：
+- 添加数字后缀：`csy`、`csy2`
+
+---
+
+## 检查清单
+
+### 新成员加入
+- [ ] 在 `content/en/project/{姓名缩写}/` 创建文件夹
+- [ ] 在 `content/zh/project/{姓名缩写}/` 创建文件夹
+- [ ] 编辑 `index.md`（英文和中文）
+- [ ] 添加 `featured.jpg` 头像
+- [ ] 设置正确的角色标签
+- [ ] 用 `blogdown::serve_site()` 预览
+- [ ] 用 `blogdown::build_site()` 构建
+- [ ] 提交并推送到 GitHub
+
+### 新论文发表
+- [ ] 在 `content/en/publication/{年份_Publication_第一作者}/` 创建文件夹
+- [ ] 在 `content/zh/publication/{年份_Publication_第一作者}/` 创建文件夹
+- [ ] 编辑 `cite.bib`
+- [ ] 编辑 `index.md`（英文和中文）
+- [ ] 添加 `featured.jpg`（可选）
+- [ ] 设置正确的 `publication_types`
+- [ ] 用 `blogdown::serve_site()` 预览
+- [ ] 用 `blogdown::build_site()` 构建
+- [ ] 提交并推送到 GitHub
+
+### 成员离组
+- [ ] 将标签改为 `Alumni`（英文和中文）
+- [ ] 更新 `summary` 中的时间范围
+- [ ] 更新进行中项目的信息
+- [ ] 预览并确认
+- [ ] 提交并推送到 GitHub
+
+---
+
+## 修改网站简介
+
+PI 介绍位于：
+- `content/en/authors/admin/_index.md`
+- `content/zh/authors/admin/_index.md`
+
+直接编辑文件即可。`---` 分隔线下方支持 HTML。
+
+---
+
+## 其他资源
+
+- [Wowchemy 文档](https://wowchemy.com/docs/)
+- [blogdown 书籍](https://bookdown.org/yihui/blogdown/)
+- [Hugo 文档](https://gohugo.io/documentation/)
+
+---
+
+*最后更新：2026年2月*
 	
 	
