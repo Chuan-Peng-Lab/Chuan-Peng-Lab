@@ -2,17 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://chuan-peng-lab.netlify.app/zh/tag/postgraduate/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://chuan-peng-lab.netlify.app/tag/postgraduate/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hans"
+                href="https://chuan-peng-lab.netlify.app/zh/tag/postgraduate/"
+                />
+  </url><url>
+    <loc>https://chuan-peng-lab.netlify.app/zh/project/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://chuan-peng-lab.netlify.app/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hans"
+                href="https://chuan-peng-lab.netlify.app/zh/project/"
+                />
+  </url><url>
+    <loc>https://chuan-peng-lab.netlify.app/zh/tags/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://chuan-peng-lab.netlify.app/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hans"
+                href="https://chuan-peng-lab.netlify.app/zh/tags/"
+                />
+  </url><url>
+    <loc>https://chuan-peng-lab.netlify.app/zh/project/rzw/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://chuan-peng-lab.netlify.app/project/rzw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hans"
+                href="https://chuan-peng-lab.netlify.app/zh/project/rzw/"
+                />
+  </url><url>
+    <loc>https://chuan-peng-lab.netlify.app/zh/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://chuan-peng-lab.netlify.app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hans"
+                href="https://chuan-peng-lab.netlify.app/zh/"
+                />
+  </url><url>
     <loc>https://chuan-peng-lab.netlify.app/zh/publication-type/2/</loc>
     <lastmod>2025-02-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication-type/2/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication-type/2/"
                 />
   </url><url>
@@ -21,12 +91,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2025_publication_pan/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2025_publication_pan/"
                 />
   </url><url>
@@ -35,12 +105,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication_types/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication_types/"
                 />
   </url><url>
@@ -49,27 +119,13 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/"
-                />
-  </url><url>
-    <loc>https://chuan-peng-lab.netlify.app/zh/</loc>
-    <lastmod>2025-02-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://chuan-peng-lab.netlify.app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://chuan-peng-lab.netlify.app/zh/"
                 />
   </url><url>
     <loc>https://chuan-peng-lab.netlify.app/zh/publication/2025_publication_ghai/</loc>
@@ -77,12 +133,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2025_publication_ghai/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2025_publication_ghai/"
                 />
   </url><url>
@@ -91,12 +147,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2025_publication_liu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2025_publication_liu/"
                 />
   </url><url>
@@ -105,12 +161,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2024_publication_zhao/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2024_publication_zhao/"
                 />
   </url><url>
@@ -119,12 +175,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2024_publication_guo/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2024_publication_guo/"
                 />
   </url><url>
@@ -133,41 +189,13 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/principal-investigator/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/principal-investigator/"
-                />
-  </url><url>
-    <loc>https://chuan-peng-lab.netlify.app/zh/project/</loc>
-    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://chuan-peng-lab.netlify.app/project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://chuan-peng-lab.netlify.app/zh/project/"
-                />
-  </url><url>
-    <loc>https://chuan-peng-lab.netlify.app/zh/tags/</loc>
-    <lastmod>2024-10-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://chuan-peng-lab.netlify.app/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://chuan-peng-lab.netlify.app/zh/tags/"
                 />
   </url><url>
     <loc>https://chuan-peng-lab.netlify.app/zh/project/hcp/</loc>
@@ -175,27 +203,13 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/hcp/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/hcp/"
-                />
-  </url><url>
-    <loc>https://chuan-peng-lab.netlify.app/zh/tag/postgraduate/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://chuan-peng-lab.netlify.app/tag/postgraduate/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://chuan-peng-lab.netlify.app/zh/tag/postgraduate/"
                 />
   </url><url>
     <loc>https://chuan-peng-lab.netlify.app/zh/project/pwk/</loc>
@@ -203,12 +217,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/pwk/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/pwk/"
                 />
   </url><url>
@@ -217,12 +231,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/undergraduate/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/undergraduate/"
                 />
   </url><url>
@@ -231,12 +245,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/ldx/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/ldx/"
                 />
   </url><url>
@@ -245,12 +259,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/sxr/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/sxr/"
                 />
   </url><url>
@@ -259,12 +273,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/zxy/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/zxy/"
                 />
   </url><url>
@@ -273,12 +287,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/czx/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/czx/"
                 />
   </url><url>
@@ -287,12 +301,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/wsy/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/wsy/"
                 />
   </url><url>
@@ -301,12 +315,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/csy/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/csy/"
                 />
   </url><url>
@@ -315,12 +329,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2024_publication_ghai/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2024_publication_ghai/"
                 />
   </url><url>
@@ -329,12 +343,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/alumni/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/alumni/"
                 />
   </url><url>
@@ -343,12 +357,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/ljc/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/ljc/"
                 />
   </url><url>
@@ -357,12 +371,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/sst/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/sst/"
                 />
   </url><url>
@@ -371,12 +385,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/shj/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/shj/"
                 />
   </url><url>
@@ -385,12 +399,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication-type/3/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication-type/3/"
                 />
   </url><url>
@@ -403,12 +417,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2024_publication_andres/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2024_publication_andres/"
                 />
   </url><url>
@@ -417,12 +431,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2024_publication_liu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2024_publication_liu/"
                 />
   </url><url>
@@ -431,12 +445,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_publication_liu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_publication_liu/"
                 />
   </url><url>
@@ -445,12 +459,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/categories/"
                 />
   </url><url>
@@ -471,12 +485,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/category/methods/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/category/methods/"
                 />
   </url><url>
@@ -485,12 +499,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/open-science/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/open-science/"
                 />
   </url><url>
@@ -503,12 +517,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/post/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/post/"
                 />
   </url><url>
@@ -521,12 +535,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/wjq/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/wjq/"
                 />
   </url><url>
@@ -535,12 +549,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/zrz/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/zrz/"
                 />
   </url><url>
@@ -549,12 +563,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/zss/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/zss/"
                 />
   </url><url>
@@ -563,12 +577,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/qzp/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/qzp/"
                 />
   </url><url>
@@ -577,12 +591,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/wcn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/wcn/"
                 />
   </url><url>
@@ -591,12 +605,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/wn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/wn/"
                 />
   </url><url>
@@ -605,12 +619,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/hy/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/hy/"
                 />
   </url><url>
@@ -619,12 +633,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/zyr/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/zyr/"
                 />
   </url><url>
@@ -633,12 +647,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/mjc/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/mjc/"
                 />
   </url><url>
@@ -647,12 +661,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_publication_sun/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_publication_sun/"
                 />
   </url><url>
@@ -661,12 +675,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_publication_chen-zhiyi2/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_publication_chen-zhiyi2/"
                 />
   </url><url>
@@ -675,12 +689,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_preprint_hu2/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_preprint_hu2/"
                 />
   </url><url>
@@ -689,12 +703,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/docker/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/docker/"
                 />
   </url><url>
@@ -703,12 +717,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/hddm/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/hddm/"
                 />
   </url><url>
@@ -717,12 +731,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/linux/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/linux/"
                 />
   </url><url>
@@ -731,12 +745,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/category/modelling/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/category/modelling/"
                 />
   </url><url>
@@ -745,12 +759,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/python/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/python/"
                 />
   </url><url>
@@ -759,12 +773,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/post/hddm_installation_tutorial/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/post/hddm_installation_tutorial/"
                 />
   </url><url>
@@ -773,12 +787,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/data-seeking/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/data-seeking/"
                 />
   </url><url>
@@ -787,12 +801,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/e-mail/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/e-mail/"
                 />
   </url><url>
@@ -801,12 +815,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/post/post_230520/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/post/post_230520/"
                 />
   </url><url>
@@ -815,12 +829,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_preprint_yue/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_preprint_yue/"
                 />
   </url><url>
@@ -829,12 +843,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_publication_jin/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_publication_jin/"
                 />
   </url><url>
@@ -843,12 +857,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_publication_zheng_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_publication_zheng_cn/"
                 />
   </url><url>
@@ -857,12 +871,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_preprint_yuki/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_preprint_yuki/"
                 />
   </url><url>
@@ -871,12 +885,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_publication_chen-zhiyi1/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_publication_chen-zhiyi1/"
                 />
   </url><url>
@@ -885,12 +899,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_publication_buchanan/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_publication_buchanan/"
                 />
   </url><url>
@@ -899,12 +913,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_publication_chen/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_publication_chen/"
                 />
   </url><url>
@@ -913,12 +927,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2023_preprint_hu1_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2023_preprint_hu1_cn/"
                 />
   </url><url>
@@ -931,12 +945,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2022_preprint_singh/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2022_preprint_singh/"
                 />
   </url><url>
@@ -945,12 +959,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/xcd/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/xcd/"
                 />
   </url><url>
@@ -959,12 +973,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/wjh/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/wjh/"
                 />
   </url><url>
@@ -973,12 +987,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2022_preprint_hu1/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2022_preprint_hu1/"
                 />
   </url><url>
@@ -987,12 +1001,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/lz/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/lz/"
                 />
   </url><url>
@@ -1001,12 +1015,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2022_publication_dorison/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2022_publication_dorison/"
                 />
   </url><url>
@@ -1015,12 +1029,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/research-assistants/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/research-assistants/"
                 />
   </url><url>
@@ -1029,12 +1043,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/lyk/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/lyk/"
                 />
   </url><url>
@@ -1043,12 +1057,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/zch/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/zch/"
                 />
   </url><url>
@@ -1057,12 +1071,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/yjx/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/yjx/"
                 />
   </url><url>
@@ -1071,12 +1085,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/tlq/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/tlq/"
                 />
   </url><url>
@@ -1085,12 +1099,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/cyq/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/cyq/"
                 />
   </url><url>
@@ -1099,12 +1113,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_liu2_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_liu2_cn/"
                 />
   </url><url>
@@ -1113,12 +1127,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/lwb/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/lwb/"
                 />
   </url><url>
@@ -1127,12 +1141,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2022_publication_bago/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2022_publication_bago/"
                 />
   </url><url>
@@ -1141,12 +1155,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2022_publication_gamboa/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2022_publication_gamboa/"
                 />
   </url><url>
@@ -1155,12 +1169,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2022_publication_geng/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2022_publication_geng/"
                 />
   </url><url>
@@ -1169,12 +1183,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2022_publication_nicole/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2022_publication_nicole/"
                 />
   </url><url>
@@ -1183,12 +1197,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_xu_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_xu_cn/"
                 />
   </url><url>
@@ -1197,12 +1211,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/hmz/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/hmz/"
                 />
   </url><url>
@@ -1211,12 +1225,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_an1/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_an1/"
                 />
   </url><url>
@@ -1225,12 +1239,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_wang/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_wang/"
                 />
   </url><url>
@@ -1239,12 +1253,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_levitis/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_levitis/"
                 />
   </url><url>
@@ -1253,12 +1267,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_an2/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_an2/"
                 />
   </url><url>
@@ -1267,12 +1281,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_liu1_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_liu1_cn/"
                 />
   </url><url>
@@ -1281,12 +1295,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_bannier/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_bannier/"
                 />
   </url><url>
@@ -1295,12 +1309,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_wang_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_wang_cn/"
                 />
   </url><url>
@@ -1309,12 +1323,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2021_publication_jones/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2021_publication_jones/"
                 />
   </url><url>
@@ -1323,12 +1337,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2020_publication_hu1/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2020_publication_hu1/"
                 />
   </url><url>
@@ -1337,12 +1351,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/lql/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/lql/"
                 />
   </url><url>
@@ -1351,12 +1365,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2020_preprint_yin/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2020_preprint_yin/"
                 />
   </url><url>
@@ -1365,12 +1379,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2020_publication_hu2/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2020_publication_hu2/"
                 />
   </url><url>
@@ -1379,12 +1393,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2020_publication_botvinik-nezer/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2020_publication_botvinik-nezer/"
                 />
   </url><url>
@@ -1393,12 +1407,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2020_publication_lyu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2020_publication_lyu/"
                 />
   </url><url>
@@ -1407,12 +1421,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2020_publication_cai_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2020_publication_cai_cn/"
                 />
   </url><url>
@@ -1421,12 +1435,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2020_publication_liu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2020_publication_liu/"
                 />
   </url><url>
@@ -1435,12 +1449,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2019_publication_zeng/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2019_publication_zeng/"
                 />
   </url><url>
@@ -1449,12 +1463,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2019_publication_lyu_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2019_publication_lyu_cn/"
                 />
   </url><url>
@@ -1463,12 +1477,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2019_publication_wang_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2019_publication_wang_cn/"
                 />
   </url><url>
@@ -1477,12 +1491,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/ddm/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/ddm/"
                 />
   </url><url>
@@ -1491,12 +1505,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/post/2019-04-29-how-to-install-and-use-hddm/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/post/2019-04-29-how-to-install-and-use-hddm/"
                 />
   </url><url>
@@ -1505,12 +1519,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/tag/perceptual-decision-making/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/tag/perceptual-decision-making/"
                 />
   </url><url>
@@ -1519,12 +1533,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2019_publication_zickfeld/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2019_publication_zickfeld/"
                 />
   </url><url>
@@ -1533,12 +1547,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2019_publication_hu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2019_publication_hu/"
                 />
   </url><url>
@@ -1547,12 +1561,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2019_publication_yin_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2019_publication_yin_cn/"
                 />
   </url><url>
@@ -1561,12 +1575,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2019_publication_liu_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2019_publication_liu_cn/"
                 />
   </url><url>
@@ -1575,12 +1589,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/dy/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/dy/"
                 />
   </url><url>
@@ -1589,12 +1603,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2018_publication_ijzerman/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2018_publication_ijzerman/"
                 />
   </url><url>
@@ -1603,12 +1617,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2018_publication_hu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2018_publication_hu/"
                 />
   </url><url>
@@ -1617,12 +1631,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2018_publication_lyu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2018_publication_lyu/"
                 />
   </url><url>
@@ -1631,12 +1645,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2018_publication_hu_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2018_publication_hu_cn/"
                 />
   </url><url>
@@ -1645,12 +1659,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2018_publication_zheng/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2018_publication_zheng/"
                 />
   </url><url>
@@ -1659,12 +1673,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/project/why/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/project/why/"
                 />
   </url><url>
@@ -1673,12 +1687,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2017_publication_ijzerman/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2017_publication_ijzerman/"
                 />
   </url><url>
@@ -1687,12 +1701,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2016_publication_hu_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2016_publication_hu_cn/"
                 />
   </url><url>
@@ -1701,12 +1715,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2015_publication_hu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2015_publication_hu/"
                 />
   </url><url>
@@ -1715,12 +1729,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2015_publication_hu_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2015_publication_hu_cn/"
                 />
   </url><url>
@@ -1729,12 +1743,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2014_publication_hu/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2014_publication_hu/"
                 />
   </url><url>
@@ -1743,12 +1757,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/publication/2011_publication_hu_cn/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/publication/2011_publication_hu_cn/"
                 />
   </url><url>
@@ -1756,12 +1770,12 @@
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://chuan-peng-lab.netlify.app/admin/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
+                hreflang="zh-Hans"
                 href="https://chuan-peng-lab.netlify.app/zh/admin/"
                 />
   </url>

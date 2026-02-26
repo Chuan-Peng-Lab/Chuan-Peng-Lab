@@ -5,12 +5,23 @@
     <link>https://chuan-peng-lab.netlify.app/zh/</link>
       <atom:link href="https://chuan-peng-lab.netlify.app/zh/index.xml" rel="self" type="application/rss+xml" />
     <description>传鹏的实验室</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Thu, 13 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://chuan-peng-lab.netlify.app/media/icon_hu3a6db96f210420c7d44d3ddf0142fcf7_129407_512x512_fill_lanczos_center_3.png</url>
       <title>传鹏的实验室</title>
       <link>https://chuan-peng-lab.netlify.app/zh/</link>
     </image>
+    
+    <item>
+      <title>任子伟</title>
+      <link>https://chuan-peng-lab.netlify.app/zh/project/rzw/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://chuan-peng-lab.netlify.app/zh/project/rzw/</guid>
+      <description>&lt;p&gt;南京师范大学心理学博士在读 &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;喜欢尝试不同的运动，喜欢猫，等一只自己主动送上门的喵~ &lt;br&gt;
+早睡、运动、养生 &lt;br&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>dockerHDDM: A User-Friendly Environment for Bayesian Hierarchical Drift-Diffusion Modeling</title>
@@ -1361,7 +1372,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;也可以通过界面操作启动 
+&lt;p&gt;也可以通过界面操作启动
 
 
 
@@ -1944,7 +1955,7 @@ As an early career researcher who request data for the first time, I have learne
 &lt;br&gt;
 电子邮箱：zhengliu2@link.cuhk.edu.cn
 &lt;br&gt;
-个人网站：https://github.com/HelenLiu0609 
+个人网站：https://github.com/HelenLiu0609
 &lt;br&gt;
 &lt;br&gt;
 教育背景
