@@ -84,65 +84,85 @@
       {{ $query = where $query "Kind" "in" . }}
     {{ end }}
 
-    {{/* Sort */}}
-    {{ $sort_by := $st.Params.content.sort_by | default "Date" }}
-    {{ $sort_ascending := $st.Params.content.sort_ascending | default (eq $st.Params.content.order "asc") | default false }}
-    {{ $sort_order := cond $sort_ascending "asc" "desc" }}
-    {{ $query = sort $query $sort_by $sort_order }}
+    {{/* Custom sorting: PI first, then current members alphabetically, then Alumni by departure date descending */}}
+    {{ $pi_members := slice }}
+    {{ $current_members := slice }}
+    {{ $alumni_members := slice }}
 
-    {{/* Custom sorting for alumni by departure date */}}
-    {{ $alumni := slice }}
-    {{ $non_alumni := slice }}
-
+    {{/* Separate members into three groups */}}
     {{ range $query }}
-      {{ if in .Params.tags "Alumni" }}
-        {{ $alumni = $alumni | append . }}
+      {{ $summary := .Params.summary }}
+      {{ $is_pi := false }}
+      {{ $is_alumni := false }}
+      {{ $is_current := false }}
+
+      {{/* Check member type */}}
+      {{ if in .Params.tags "Principal Investigator" }}
+        {{ $is_pi = true }}
+      {{ else if in .Params.tags "Alumni" }}
+        {{ $is_alumni = true }}
       {{ else }}
-        {{ $non_alumni = $non_alumni | append . }}
+        {{ $is_current = true }}
+      {{ end }}
+
+      {{/* Process based on member type */}}
+      {{ if $is_pi }}
+        {{/* PI member - no date processing needed */}}
+        {{ $pi_members = $pi_members | append (dict "page" . "sortable_date" "00000000" "title" .Title) }}
+      {{ else if $is_current }}
+        {{/* Current member - use far future date for sorting, will be sorted alphabetically */}}
+        {{ $current_members = $current_members | append (dict "page" . "sortable_date" "99999999" "title" .Title) }}
+      {{ else if $is_alumni }}
+        {{/* Alumni member - extract departure date */}}
+        {{ $end_date := "" }}
+        {{ $sortable_date := "00000000" }}
+
+        {{/* Extract LAST date from date range using regex */}}
+        {{ $all_matches := findRE "~\\s*([A-Za-z]+\\.\\s*\\d{4})" $summary "all" }}
+        {{ if $all_matches }}
+          {{/* Get the last match (departure date) */}}
+          {{ $last_match := index $all_matches (sub (len $all_matches) 1) }}
+          {{ $end_date = $last_match }}
+
+          {{/* Parse month and year */}}
+          {{ $month_year := $last_match | strings.TrimPrefix "~ " }}
+          {{ $month_abbr := $month_year | strings.Before " " }}
+          {{ $year := $month_year | strings.After " " }}
+          {{ $month_num := partial "month-to-number.html" $month_abbr }}
+          {{ $sortable_date = printf "%04d%02d" (int $year) $month_num }}
+        {{ else if findRE "~\\s*Now" $summary }}
+          {{ $end_date = "~ Now" }}
+          {{ $sortable_date = "99999999" }}
+        {{ end }}
+
+        {{ $alumni_members = $alumni_members | append (dict "page" . "end_date" $end_date "sortable_date" $sortable_date "title" .Title) }}
       {{ end }}
     {{ end }}
 
-    {{/* Sort alumni by departure date (extracted from summary) */}}
-    {{ $sorted_alumni := slice }}
-    {{ range $alumni }}
-      {{ $end_date := "" }}
-      #MN|      {{/* Parse "~ Jun. 2025" or "~ Now" from summary */}}
-      {{ $all_matches := findRE "~\\s*([A-Za-z]+\\\\\\.\\\\\\s*\\d{4})" $summary "all" }}
-      {{ if $all_matches }}
+    {{/* Sort each group */}}
+    {{/* PI members: keep as-is (only one PI) */}}
+    {{ $sorted_pi := $pi_members }}
 
-        {{ $end_date = index $all_matches (sub (len $all_matches) 1) }}
-#TB|        {{/* Create sortable date format: YYYYMM for proper month sorting */}}
-#TB|        {{/* Extract month and year */}}
-#TB|        {{ $month_year := $end_date | strings.TrimPrefix "~ " }}
-#TB|        {{ $month_abbr := $month_year | strings.Before " " }}
-#TB|        {{ $year := $month_year | strings.After " " }}
-#TB|        {{ $month_num := partial "month-to-number.html" $month_abbr }}
-#TB|        {{ $sortable_date := printf "%04d%02d" (int $year) $month_num }}
-      {{ else if findRE "~\\s*Now" $summary }}
-#QV|        {{ $end_date = "~ Now" }}
-#TB|        {{/* For current members, use far future date for sorting */}}
-#TB|        {{ $sortable_date = "99999999" }}
-#TB|      {{ else }}
-#TB|        {{ $end_date = "" }}
-#TB|        {{ $sortable_date = "00000000" }}
-#TB|      {{ end }}
-#RN|      {{ $sorted_alumni = $sorted_alumni | append (dict "page" . "end_date" $end_date "sortable_date" $sortable_date "title" .Title) }}
+    {{/* Current members: sort alphabetically by title */}}
+    {{ $sorted_current := sort $current_members "title" "asc" }}
+
+    {{/* Alumni members: sort by departure date desc, then by title asc for tie-breaker */}}
+    {{ $sorted_alumni := sort $alumni_members "sortable_date" "desc" }}
+    {{ $sorted_alumni = sort $sorted_alumni "title" "asc" }}
+
+    {{/* Combine groups in correct order: PI → current → alumni */}}
+    {{ $sorted_query := slice }}
+    {{ range $sorted_pi }}
+      {{ $sorted_query = $sorted_query | append .page }}
     {{ end }}
-
-    #MK|    {{/* Sort by sortable_date desc (most recent first), then by title asc */}}
-    #YZ|    {{ $sorted_alumni = sort $sorted_alumni "sortable_date" "desc" }}
-    #PP|    {{ $sorted_alumni = sort $sorted_alumni "title" "asc" }}
-
-    {{/* Combine: alumni first, then non-alumni */}}
-    {{ $query = slice }}
+    {{ range $sorted_current }}
+      {{ $sorted_query = $sorted_query | append .page }}
+    {{ end }}
     {{ range $sorted_alumni }}
-      {{ $query = $query | append .page }}
-    {{ end }}
-    {{ range $non_alumni }}
-      {{ $query = $query | append . }}
+      {{ $sorted_query = $sorted_query | append .page }}
     {{ end }}
 
-    {{ range $index, $item := $query }}
+    {{ range $index, $item := $sorted_query }}
       {{ $js_tag_classes := delimit (apply (apply (apply $item.Params.tags "replace" "." " " "-") "printf" "js-id-%s" ".") "lower" ".") " " }}
         {{ if in (slice "masonry" 3) $view }}
           <div class="project-card project-item isotope-item {{ $js_tag_classes | safeHTMLAttr }}">
