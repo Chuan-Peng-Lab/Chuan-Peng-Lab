@@ -246,6 +246,7 @@ Max Concurrent: 5 (Wave 1)
   - [ ] Grep output showing sorting logic
 
   **Commit**: NO
+- [x] 3. **Fix regex to extract LAST date**
 - [x] 2. **Implement month abbreviation mapping**
 
   **What to do**:

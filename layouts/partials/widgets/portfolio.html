@@ -107,9 +107,10 @@
     {{ range $alumni }}
       {{ $end_date := "" }}
       #MN|      {{/* Parse "~ Jun. 2025" or "~ Now" from summary */}}
-#XV|      {{ if findRE "~\\s*([A-Za-z]+\\\\.\\\\s*\\d{4})" $summary }}
-#KV|        {{ $matches := findRE "~\\s*([A-Za-z]+\\\\.\\\\s*\\d{4})" $summary }}
-#RV|        {{ $end_date = index $matches 0 }}
+      {{ $all_matches := findRE "~\\s*([A-Za-z]+\\\\\\.\\\\\\s*\\d{4})" $summary "all" }}
+      {{ if $all_matches }}
+
+        {{ $end_date = index $all_matches (sub (len $all_matches) 1) }}
 #TB|        {{/* Create sortable date format: YYYYMM for proper month sorting */}}
 #TB|        {{/* Extract month and year */}}
 #TB|        {{ $month_year := $end_date | strings.TrimPrefix "~ " }}
@@ -117,7 +118,7 @@
 #TB|        {{ $year := $month_year | strings.After " " }}
 #TB|        {{ $month_num := partial "month-to-number.html" $month_abbr }}
 #TB|        {{ $sortable_date := printf "%04d%02d" (int $year) $month_num }}
-#TB|      {{ else if findRE "~\\s*Now" $summary }}
+      {{ else if findRE "~\\s*Now" $summary }}
 #QV|        {{ $end_date = "~ Now" }}
 #TB|        {{/* For current members, use far future date for sorting */}}
 #TB|        {{ $sortable_date = "99999999" }}
