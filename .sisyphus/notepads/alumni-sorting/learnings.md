@@ -374,3 +374,56 @@ The sorting implementation is now complete and verified. The foundation is solid
 **Status**: ✅ ALL SORTING REQUIREMENTS MET
 
 The reorganization from incorrect Alumni-first order to correct PI→current→alumni order is complete and fully verified.
+# Hugo v0.102.3 Compatibility Fixes
+
+## Problem
+Netlify uses Hugo v0.102.3 (released 2022-09-01) which has several incompatibilities with newer Hugo template syntax.
+
+## Issues Encountered and Fixes
+
+### Issue 1: findRE limit parameter
+- **Error**: `error calling findRE: unable to cast "all" of type string to int64`
+- **Cause**: Hugo v0.102.3 expects integer limit, not string `"all"`
+- **Fix**: Use `-1` instead of `"all"` to get all matches
+- **Code**: `findRE "pattern" $string -1`
+
+### Issue 2: strings.Before/After methods
+- **Error**: `can't evaluate field Before in type interface {}`
+- **Cause 1**: `findRE` returns `[]interface{}` not `[]string`
+- **Cause 2**: `strings.Before` and `strings.After` not available in v0.102.3
+- **Fix**: 
+  1. Convert with `printf "%s"` to get string
+  2. Use `split` function instead of `strings.Before/After`
+- **Code**: 
+  ```hugo
+  {{ $last_match := printf "%s" (index $all_matches (sub (len $all_matches) 1)) }}
+  {{ $parts := split $string " " }}
+  {{ $first := index $parts 0 }}
+  ```
+
+### Issue 3: return statement
+- **Error**: `wrong number of args for return: want 0 got 1`
+- **Cause**: Hugo v0.102.3's `return` doesn't accept arguments
+- **Fix**: Output value directly at end of partial instead of using `return $value`
+- **Code**:
+  ```hugo
+  {{- $result := 0 -}}
+  {{- range $key, $value := $dict -}}
+    {{- if eq $input $key -}}
+      {{- $result = $value -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $result -}}
+  ```
+
+### Issue 4: strings.TrimPrefix argument order
+- **Cause**: In older Hugo, prefix comes first, then string
+- **Fix**: `strings.TrimPrefix "prefix" $string` (not pipe style)
+
+## Commits
+1. `5ba1d251` - fix(widget): use -1 instead of 'all' for findRE limit parameter
+2. `83237ab4` - fix(widget): fix type conversion for Hugo v0.102.3 compatibility
+3. `e8bf073d` - fix(widget): remove return statement for Hugo v0.102.3 compatibility
+
+## Key Takeaway
+Always test with the exact Hugo version used in production (Netlify). Newer Hugo features may not be available.

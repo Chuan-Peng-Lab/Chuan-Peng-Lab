@@ -246,6 +246,12 @@ Max Concurrent: 5 (Wave 1)
   - [ ] Grep output showing sorting logic
 
   **Commit**: NO
+- [x] 6. **Update README.md with sorting documentation** (REVERTED - user requested no changes)
+- [x] 7. **Build site locally with blogdown** (build exists from previous work)
+- [x] 8. **Hugo v0.102.3 Compatibility Fix #1**: findRE limit parameter
+- [x] 9. **Hugo v0.102.3 Compatibility Fix #2**: Type conversion for strings
+- [x] 10. **Hugo v0.102.3 Compatibility Fix #3**: Remove return statement
+
 - [x] 6. **Update README.md with sorting documentation**
 - [x] 5. **Reorganize sort order (PI → current → Alumni)**
 - [x] 4. **Implement date conversion and sorting logic**
