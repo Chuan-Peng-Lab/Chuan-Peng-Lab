@@ -118,7 +118,7 @@
         {{ $sortable_date := "00000000" }}
 
         {{/* Extract LAST date from date range using regex */}}
-        {{ $all_matches := findRE "~\\s*([A-Za-z]+\\.\\s*\\d{4})" $summary "all" }}
+        {{ $all_matches := findRE "~\\s*([A-Za-z]+\\.\\s*\\d{4})" $summary -1 }}
         {{ if $all_matches }}
           {{/* Get the last match (departure date) */}}
           {{ $last_match := index $all_matches (sub (len $all_matches) 1) }}
