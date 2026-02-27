@@ -1,0 +1,19 @@
+Month Abbreviation Verification Results
+======================================
+Date: Fri Feb 27 09:44:37 CST 2026
+
+#VS|Found in member data:
+#Sep.
+#Mar.
+#Aug.
+#Jun.
+#Jul.
+#Oct.
+#Nov.
+Template contains:
+  {{ $month_num := monthToNumber "Sep." }}
+  {{ $month_num := monthToNumber (index $matches 0 | strings.TrimSuffix " 2025") }}
+  - $month_abbr - Month abbreviation (e.g., "Jan.", "Feb.", "Mar.", etc.)
+{{- range $key, $value := dict "Jan." 1 "Feb." 2 "Mar." 3 "Apr." 4 "May." 5 "Jun." 6 "Jul." 7 "Aug." 8 "Sep." 9 "Oct." 10 "Nov." 11 "Dec." 12 -}}
+
+Status: true

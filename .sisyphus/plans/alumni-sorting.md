@@ -246,6 +246,19 @@ Max Concurrent: 5 (Wave 1)
   - [ ] Grep output showing sorting logic
 
   **Commit**: NO
+- [x] 2. **Implement month abbreviation mapping**
+
+  **What to do**:
+  - Create Hugo template function to map month abbreviations to numeric values
+  - Handle all common abbreviations: Jan., Feb., Mar., Apr., May, Jun., Jul., Aug., Sep., Oct., Nov., Dec.
+  - Implement as a Hugo template partial or inline function
+  - Test the mapping works correctly
+  - Document the implementation
+
+  **Must NOT do**:
+  - Do NOT modify any theme files in `themes/` directory
+  - Do NOT create new frontmatter fields
+  - Do NOT make changes to member data files
 
 ## Final Verification Wave (MANDATORY — after ALL implementation tasks)
 

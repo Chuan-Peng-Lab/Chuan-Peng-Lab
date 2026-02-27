@@ -106,20 +106,31 @@
     {{ $sorted_alumni := slice }}
     {{ range $alumni }}
       {{ $end_date := "" }}
-      {{ $summary := .Params.summary }}
-      {{/* Parse "~ Jun. 2025" or "~ Now" from summary */}}
-      {{ if findRE "~\\s*([A-Za-z]+\\.\\s*\\d{4})" $summary }}
-        {{ $matches := findRE "~\\s*([A-Za-z]+\\.\\s*\\d{4})" $summary }}
-        {{ $end_date = index $matches 0 }}
-      {{ else if findRE "~\\s*Now" $summary }}
-        {{ $end_date = "~ Now" }}
-      {{ end }}
-      {{ $sorted_alumni = $sorted_alumni | append (dict "page" . "end_date" $end_date "title" .Title) }}
+      #MN|      {{/* Parse "~ Jun. 2025" or "~ Now" from summary */}}
+#XV|      {{ if findRE "~\\s*([A-Za-z]+\\\\.\\\\s*\\d{4})" $summary }}
+#KV|        {{ $matches := findRE "~\\s*([A-Za-z]+\\\\.\\\\s*\\d{4})" $summary }}
+#RV|        {{ $end_date = index $matches 0 }}
+#TB|        {{/* Create sortable date format: YYYYMM for proper month sorting */}}
+#TB|        {{/* Extract month and year */}}
+#TB|        {{ $month_year := $end_date | strings.TrimPrefix "~ " }}
+#TB|        {{ $month_abbr := $month_year | strings.Before " " }}
+#TB|        {{ $year := $month_year | strings.After " " }}
+#TB|        {{ $month_num := partial "month-to-number.html" $month_abbr }}
+#TB|        {{ $sortable_date := printf "%04d%02d" (int $year) $month_num }}
+#TB|      {{ else if findRE "~\\s*Now" $summary }}
+#QV|        {{ $end_date = "~ Now" }}
+#TB|        {{/* For current members, use far future date for sorting */}}
+#TB|        {{ $sortable_date = "99999999" }}
+#TB|      {{ else }}
+#TB|        {{ $end_date = "" }}
+#TB|        {{ $sortable_date = "00000000" }}
+#TB|      {{ end }}
+#RN|      {{ $sorted_alumni = $sorted_alumni | append (dict "page" . "end_date" $end_date "sortable_date" $sortable_date "title" .Title) }}
     {{ end }}
 
-    {{/* Sort by end_date desc, then by title asc */}}
-    {{ $sorted_alumni = sort $sorted_alumni "end_date" "desc" }}
-    {{ $sorted_alumni = sort $sorted_alumni "title" "asc" }}
+    #MK|    {{/* Sort by sortable_date desc (most recent first), then by title asc */}}
+    #YZ|    {{ $sorted_alumni = sort $sorted_alumni "sortable_date" "desc" }}
+    #PP|    {{ $sorted_alumni = sort $sorted_alumni "title" "asc" }}
 
     {{/* Combine: alumni first, then non-alumni */}}
     {{ $query = slice }}
