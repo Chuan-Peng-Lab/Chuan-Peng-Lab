@@ -1,0 +1,2 @@
+Error: hugo not found. You may try blogdown::install_hugo().
+Execution halted
