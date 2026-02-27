@@ -120,14 +120,15 @@
         {{/* Extract LAST date from date range using regex */}}
         {{ $all_matches := findRE "~\\s*([A-Za-z]+\\.\\s*\\d{4})" $summary -1 }}
         {{ if $all_matches }}
-          {{/* Get the last match (departure date) */}}
-          {{ $last_match := index $all_matches (sub (len $all_matches) 1) }}
+          {{/* Get the last match (departure date) and convert to string */}}
+          {{ $last_match := printf "%s" (index $all_matches (sub (len $all_matches) 1)) }}
           {{ $end_date = $last_match }}
 
           {{/* Parse month and year */}}
-          {{ $month_year := $last_match | strings.TrimPrefix "~ " }}
-          {{ $month_abbr := $month_year | strings.Before " " }}
-          {{ $year := $month_year | strings.After " " }}
+          {{ $month_year := strings.TrimPrefix "~ " $last_match }}
+          {{ $parts := split $month_year " " }}
+          {{ $month_abbr := index $parts 0 }}
+          {{ $year := index $parts 1 }}
           {{ $month_num := partial "month-to-number.html" $month_abbr }}
           {{ $sortable_date = printf "%04d%02d" (int $year) $month_num }}
         {{ else if findRE "~\\s*Now" $summary }}
