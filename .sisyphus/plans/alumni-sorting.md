@@ -246,6 +246,7 @@ Max Concurrent: 5 (Wave 1)
   - [ ] Grep output showing sorting logic
 
   **Commit**: NO
+- [x] 6. **Update README.md with sorting documentation**
 - [x] 5. **Reorganize sort order (PI → current → Alumni)**
 - [x] 4. **Implement date conversion and sorting logic**
 - [x] 3. **Fix regex to extract LAST date**
