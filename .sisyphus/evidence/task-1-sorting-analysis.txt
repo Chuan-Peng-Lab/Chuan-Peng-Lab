@@ -1,0 +1,30 @@
+# Sorting Analysis Results
+
+## grep -n "sort" output:
+```
+88:    {{ $sort_by := $st.Params.content.sort_by | default "Date" }}
+89:    {{ $sort_ascending := $st.Params.content.sort_ascending | default (eq $st.Params.content.order "asc") | default false }}
+90:    {{ $sort_order := cond $sort_ascending "asc" "desc" }}
+91:    {{ $query = sort $query $sort_by $sort_order }}
+93:    {{/* Custom sorting for alumni by departure date */}}
+106:    {{ $sorted_alumni := slice }}
+117:      {{ $sorted_alumni = $sorted_alumni | append (dict "page" . "end_date" $end_date "title" .Title) }}
+121:    {{ $sorted_alumni = sort $sorted_alumni "end_date" "desc" }}
+122:    {{ $sorted_alumni = sort $sorted_alumni "title" "asc" }}
+126:    {{ range $sorted_alumni }}
+```
+
+## Template Read Evidence:
+File successfully read at /Users/siyu/Documents/Chuan-Peng-Lab/layouts/partials/widgets/portfolio.html
+Lines 87-132 contain the sorting logic implementation:
+- Lines 87-91: Default sorting
+- Lines 93-102: Alumni/non-alumni separation
+- Lines 105-117: Date extraction from summary
+- Lines 121-122: Multiple sorting operations
+- Lines 126-131: Final query reassembly
+
+## Key Findings:
+1. 8 sorting-related lines identified
+2. Custom alumni sorting logic starts at line 93
+3. Date parsing happens at lines 111-116
+4. Multiple sort operations at lines 121-122
