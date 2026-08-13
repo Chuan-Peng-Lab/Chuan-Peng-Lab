@@ -48,7 +48,7 @@ authors:
 - Azevedo, Flavio
 date: "2025-01-01T00:00:00Z"
 doi: "10.1177/25152459251357565"
-featured: false
+featured: true
 image:
   caption: ''
   focal_point: ""
